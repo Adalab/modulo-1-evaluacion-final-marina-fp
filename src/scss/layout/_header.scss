@@ -1,5 +1,13 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.menu__box {
+  width: 44px;
+  height: 44px;
+  background-color: $blue;
+  padding: 14px 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.menu__link {
+  color: $white;
+  size: 100%;
 }
