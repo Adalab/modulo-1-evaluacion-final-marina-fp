@@ -16,6 +16,12 @@
   font-weight: 700;
   font-size: 42px;
   margin: 15px;
+  @media all and (min-width: 768px) {
+    font-size: 80px;
+  }
+  @media all and (min-width: 1280px) {
+    font-size: 100px;
+  }
 }
 .hero__title--line {
   display: flex;
@@ -26,6 +32,9 @@
   font-weight: 400;
   font-size: 16px;
   color: $white;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 .link-three {
   width: 45px;
@@ -42,6 +51,12 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding: 30px 39px;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 60px 275px;
+  }
 }
 .window__small {
   height: 30px;
@@ -55,15 +70,26 @@
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 15px;
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+    height: 45px;
+  }
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 .window__text {
   font-family: $text;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 1.5;
   color: $grey;
   margin-bottom: 30px;
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
-.link-go {
+.window__button {
   font-family: $text;
   font-weight: 500;
   font-size: 20px;
@@ -76,6 +102,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    width: 91px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 160px;
+  }
 }
 .reasons {
   background-color: $iceblue;
