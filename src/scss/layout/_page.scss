@@ -2,8 +2,11 @@
   width: 100vw;
   height: 100vh;
   background-image: url(../images/cover.jpg);
-  background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .hero__title {
   text-transform: uppercase;
@@ -11,9 +14,68 @@
   font-family: $title;
   font-weight: 700;
   font-size: 42px;
+  margin: 15px;
+}
+.hero__title--line {
+  display: flex;
+  justify-content: center;
 }
 .hero__text {
   font-family: $text;
   font-weight: 400;
+  font-size: 16px;
   color: $white;
+}
+.arrow-bottom {
+  width: 45px;
+  height: 45px;
+  margin: 45px;
+  border-radius: 25px;
+  background-color: $white;
+  background-image: url(../images/ico-scroll-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.window {
+  padding: 30px 15px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+.window__small {
+  height: 30px;
+  font-family: $text;
+  font-size: 14px;
+  color: $lightblue;
+}
+.window__title {
+  height: 60px;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.window__text {
+  font-family: $text;
+  font-size: 18px;
+  line-height: 1.67;
+  color: $grey;
+  margin-bottom: 30px;
+}
+.link-go {
+  font-family: $text;
+  font-weight: 500;
+  font-size: 20px;
+  color: $orange;
+  text-decoration: none;
+  height: 45px;
+  width: 76px;
+  border: 2px solid $orange;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reasons {
+  background-color: $iceblue;
 }
