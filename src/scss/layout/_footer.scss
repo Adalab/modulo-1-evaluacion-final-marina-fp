@@ -1,0 +1,58 @@
+.footer {
+  background-color: $darkblue;
+  font-family: $text;
+  font-size: 16px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 30px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__link {
+    color: $white;
+    text-decoration: none;
+  }
+}
+.link-start {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: $white;
+  background-image: url(../images/ico-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(0, -41vh);
+  /*left: 50vw;
+  bottom: -960px;*/
+}
+
+.footer__menu {
+  list-style: none;
+  margin-top: 60px;
+}
+.footer__menu--element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__link {
+  padding: 5px;
+}
+.footer__social {
+  list-style: none;
+  margin: 30px;
+}
+.footer__social--element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.love {
+  text-transform: lowercase;
+  margin-bottom: 45px;
+}

@@ -3,6 +3,7 @@
   height: 100vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +27,7 @@
   font-size: 16px;
   color: $white;
 }
-.arrow-bottom {
+.link-three {
   width: 45px;
   height: 45px;
   margin: 45px;
@@ -78,4 +79,56 @@
 }
 .reasons {
   background-color: $iceblue;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.reasons__title {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 24px;
+  height: 30px;
+  grid-column: span 12;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.reason1 {
+  grid-column: span 12;
+  margin-bottom: 45px;
+}
+.reason2 {
+  grid-column: span 12;
+  margin-bottom: 45px;
+}
+.reason3 {
+  grid-column: span 12;
+  margin-bottom: 45px;
+}
+.link-reasons {
+  grid-column: 4 /10;
+  margin-bottom: 60px;
+  font-family: $text;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 22.5px;
+  background-color: $orange;
+  color: $white;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reason__title {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  height: 30px;
+}
+.reason__text {
+  font-family: $text;
+  font-size: 18px;
+  padding: 0px 70px;
 }
