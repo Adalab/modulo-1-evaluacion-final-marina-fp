@@ -5,42 +5,47 @@
   color: $white;
   text-transform: uppercase;
   line-height: 30px;
-  position: static;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   &__link {
     color: $white;
     text-decoration: none;
-  }
-  @media all and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-around;
   }
 }
 .link-start {
   width: 45px;
   height: 45px;
-  border-radius: 25px;
+  border-radius: 22.5px;
   background-color: $white;
   background-image: url(../images/ico-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  transform: translate(0, -41vh);
-  /*left: 50vw;
-  bottom: -960px;*/
+  left: 50%;
+  transform: translate(-22.5px, -22.5px);
 }
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media all and (min-width: 1280px) {
+    justify-content: center;
+  }
+}
 .footer__menu {
   list-style: none;
   margin-top: 60px;
   @media all and (min-width: 768px) {
-    margin-top: 45px;
-    margin-top: 45px;
+    margin: 45px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     order: 1;
   }
   @media all and (min-width: 1280px) {
@@ -51,9 +56,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media all and (min-width: 768px) {
-    align-items: flex-start;
-  }
 }
 .footer__link {
   padding: 5px;
@@ -66,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     order: 2;
   }
 }
@@ -74,19 +77,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media all and (min-width: 768px) {
-    align-items: flex-start;
-  }
 }
 .copy {
+  margin-bottom: 45px;
   @media all and (min-width: 768px) {
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     order: 0;
   }
 }
 .love {
   text-transform: lowercase;
   margin-bottom: 45px;
+}
+.heart-container {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+.heart {
+  animation-duration: 1.5s;
+  animation-name: beat;
+  animation-iteration-count: infinite;
+  @keyframes beat {
+    from {
+      font-size: 14px;
+    }
+    to {
+      font-size: 16px;
+    }
+  }
 }
