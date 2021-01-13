@@ -69,7 +69,9 @@
   font-family: $title;
   font-weight: 700;
   font-size: 24px;
+  text-transform: capitalize;
   margin-bottom: 15px;
+
   @media all and (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 30px;
@@ -114,12 +116,13 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .reasons__title {
   font-family: $title;
   font-weight: 700;
   font-size: 24px;
+  text-transform: capitalize;
   height: 30px;
   grid-column: span 12;
   margin-top: 30px;
@@ -128,17 +131,26 @@
 .reason1 {
   grid-column: span 12;
   margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    grid-column: 1 / 5;
+  }
 }
 .reason2 {
   grid-column: span 12;
   margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    grid-column: 5 / 9;
+  }
 }
 .reason3 {
   grid-column: span 12;
   margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    grid-column: 9 / 13;
+  }
 }
 .link-reasons {
-  grid-column: 4 /10;
+  grid-column: 4 / 10;
   margin-bottom: 60px;
   font-family: $text;
   font-weight: 500;
@@ -151,6 +163,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    grid-column: 6 / 8;
+  }
 }
 
 .reason__title {
@@ -163,4 +178,10 @@
   font-family: $text;
   font-size: 18px;
   padding: 0px 70px;
+  @media all and (min-width: 768px) {
+    padding: 0px 25px;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 0px 60px;
+  }
 }
