@@ -30,7 +30,7 @@
     transform: translate(-22.5px, -17.5px);
   }
   50% {
-    transform: translate(-22.5px, -32.5px);
+    transform: translate(-22.5px, -27.5px);
   }
   100% {
     transform: translate(-22.5px, -17.5px);
@@ -117,11 +117,14 @@
   animation-name: beat;
   animation-iteration-count: infinite;
   @keyframes beat {
-    from {
+    0% {
       font-size: 14px;
     }
-    to {
+    50% {
       font-size: 16px;
+    }
+    100% {
+      font-size: 14px;
     }
   }
 }
