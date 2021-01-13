@@ -21,6 +21,20 @@
   position: absolute;
   left: 50%;
   transform: translate(-22.5px, -22.5px);
+  animation-name: bounce;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(-22.5px, -17.5px);
+  }
+  50% {
+    transform: translate(-22.5px, -32.5px);
+  }
+  100% {
+    transform: translate(-22.5px, -17.5px);
+  }
 }
 .footer__container {
   display: flex;
