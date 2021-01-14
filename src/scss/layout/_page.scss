@@ -118,6 +118,38 @@
     width: 160px;
   }
 }
+.prices {
+  background-color: $orange;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  @media all and (min-width: 768px) {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.prices__title {
+  grid-column: span 3;
+  color: $white;
+}
+.prices__subtitle1 {
+  margin: 20px;
+  grid-column: span 3;
+  color: $white;
+  @media all and (min-width: 768px) {
+    grid-column: 1 / 2;
+    text-align: left;
+  }
+}
+.prices__subtitle2 {
+  margin: 20px;
+  grid-column: span 3;
+  color: $white;
+  @media all and (min-width: 768px) {
+    grid-column: 3 / 4;
+    text-align: right;
+  }
+}
 .reasons {
   background-color: $iceblue;
   text-align: center;
